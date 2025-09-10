@@ -15,3 +15,12 @@ function adicionarAmigo() {
     nomeInput.value = '';
     nomeInput.focus();
 }
+
+function atualizarLista() {
+    listaAmigos.innerHTML = '';
+    amigos.forEach(nome => {
+        let li = document.createElement('li');
+        li.textContent = nome;
+        listaAmigos.appendChild(li);
+    });
+}
