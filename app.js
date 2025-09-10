@@ -24,3 +24,12 @@ function atualizarLista() {
         listaAmigos.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert('Adicione pelo menos um nome antes de sortear!');
+        return;
+    }
+    let sorteado = amigos[Math.floor(Math.random() * amigos.length)];
+    resultado.innerHTML = `<li>O amigo secreto sorteado foi: ${sorteado}!</li>`;
+}
