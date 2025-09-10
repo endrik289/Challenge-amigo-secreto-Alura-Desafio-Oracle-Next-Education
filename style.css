@@ -1,5 +1,5 @@
 :root {
-    --color-primary: #4B69FD;
+    --color-primary: #0BA6DF;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
@@ -159,4 +159,11 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.footer-text {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    color: var(--color-white);
+    margin: 10px 0;
 }
